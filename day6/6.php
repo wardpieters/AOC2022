@@ -1,6 +1,5 @@
 <?php
-$input = file('input.txt', FILE_IGNORE_NEW_LINES);
-$input = str_split($input[0]);
+$input = str_split(file_get_contents('input.txt'));
 
 // Part 1 = 4, part 2 = 14
 $length = 4;
